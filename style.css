@@ -207,327 +207,106 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
-/* SECCION S K I L L S */
-.skills {
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
-}
-.skills .contenido-seccion {
-    max-width: 1100px;
-    margin: auto;
-}
-.skills h2 {
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-.skills .fila {
-    display: flex;
-    gap: 0.5rem; /* Space between technical and professional skills */
-    flex-wrap: wrap;
-}
-.skills .fila .col {
-    flex: 1;
-    padding: 0 20px;
-    min-width: 300px;
-}
-.skills .fila .col h3 {
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.skills .skill > span {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-.skills .skill .barra-skill {
-    height: 8px;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.skills .skill .progreso {
-    background-color: #EF0C0C;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-    border-radius: 5px;
-}
-.skills .skill .barra-skill span {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #EF0C0C;
-    border-radius: 50%;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    font-size: 14px;
-    color: #fff;
-    right: 0;
-    transform: translateX(50%);
-}
+<!-- SKILLS SECTION WITH EMBEDDED CSS -->
+<section class="skills" id="skills">
+  <style>
+    .skills {
+      background-color: #252A2E;
+      color: #fff;
+      padding: 50px 20px;
+      font-family: 'Righteous';
+    }
+    .skills .contenido-seccion {
+      max-width: 1100px;
+      margin: auto;
+    }
+    .skills h2 {
+      font-size: 48px;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .skills .fila {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .skills .fila .col {
+      flex: 1;
+      min-width: 300px;
+      padding: 0 20px;
+    }
+    .skills .fila .col h3 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+    .skills .skill > span {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .skills .skill .barra-skill {
+      height: 8px;
+      width: 100%;
+      background-color: #131517;
+      position: relative;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .skills .skill .progreso {
+      background-color: #EF0C0C;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-radius: 5px;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+    .skills .skill .barra-skill span {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      background-color: #EF0C0C;
+      border-radius: 50%;
+      line-height: 40px;
+      text-align: center;
+      top: -17px;
+      right: -20px;
+      font-size: 14px;
+      color: #fff;
+      transform: translateX(50%);
+    }
+  </style>
 
-/* Actual Skill Progress Widths */
-.skills .skill .javascript {
-    width: 75%;
-}
-.skills .skill .htmlcss {
-    width: 89%;
-}
-.skills .skill .photoshop {
-    width: 95%;
-}
-.skills .skill .wordpress {
-    width: 81%;
-}
-.skills .skill .drupal {
-    width: 55%;
-}
-.skills .skill .comunicacion {
-    width: 80%;
-}
-.skills .skill .trabajo {
-    width: 70%;
-}
-.skills{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
-}
-.skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.skills h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-.skills .fila{
-    display: flex;
-    gap: 0.5rem; /* 👈 Added spacing between Technical & Professional Skills */
-}
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
-}
-.skills .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 100%; /* 👈 Full width container */
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: #EF0C0C;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #EF0C0C;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-}
+  <div class="contenido-seccion">
+    <h2>Skills</h2>
+    <div class="fila">
+      <!-- Technical Skills -->
+      <div class="col">
+        <h3>Technical Skills</h3>
+        <div class="skill"><span>Certified Ethical Hacking</span><div class="barra-skill"><div class="progreso" style="width: 75%;"><span>75%</span></div></div></div>
+        <div class="skill"><span>Web Penetration Testing</span><div class="barra-skill"><div class="progreso" style="width: 80%;"><span>80%</span></div></div></div>
+        <div class="skill"><span>Bug Bounty Hunting</span><div class="barra-skill"><div class="progreso" style="width: 85%;"><span>85%</span></div></div></div>
+        <div class="skill"><span>Full Stack Web Development</span><div class="barra-skill"><div class="progreso" style="width: 92%;"><span>92%</span></div></div></div>
+        <div class="skill"><span>WordPress Web Development</span><div class="barra-skill"><div class="progreso" style="width: 95%;"><span>95%</span></div></div></div>
+        <div class="skill"><span>Professional Video Editing</span><div class="barra-skill"><div class="progreso" style="width: 90%;"><span>90%</span></div></div></div>
+        <div class="skill"><span>Graphic Designing</span><div class="barra-skill"><div class="progreso" style="width: 98%;"><span>98%</span></div></div></div>
+      </div>
 
-/* Accurate % animations — 👇 values updated */
+      <!-- Professional Skills -->
+      <div class="col">
+        <h3>Professional Skills</h3>
+        <div class="skill"><span>Communication</span><div class="barra-skill"><div class="progreso" style="width: 80%;"><span>80%</span></div></div></div>
+        <div class="skill"><span>Teamwork</span><div class="barra-skill"><div class="progreso" style="width: 70%;"><span>70%</span></div></div></div>
+        <div class="skill"><span>Creativity</span><div class="barra-skill"><div class="progreso" style="width: 99%;"><span>99%</span></div></div></div>
+        <div class="skill"><span>Dedication</span><div class="barra-skill"><div class="progreso" style="width: 65%;"><span>65%</span></div></div></div>
+        <div class="skill"><span>Project Management</span><div class="barra-skill"><div class="progreso" style="width: 94%;"><span>94%</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-.skills .skill .javascript{
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .htmlcss{
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
-}
-
-.skills .skill .photoshop{
-    animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .wordpress{
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .trabajo{
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .dedicacion{
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .proyect{
-    animation: 2s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
-}
-
-
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
-}
-
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
