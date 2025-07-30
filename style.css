@@ -296,15 +296,148 @@ html{
 .skills .skill .trabajo {
     width: 70%;
 }
-.skills .skill .creatividad {
-    width: 99%;
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
 }
-.skills .skill .dedicacion {
-    width: 65%;
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
 }
-.skills .skill .proyect {
-    width: 94%;
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
 }
+.skills .fila{
+    display: flex;
+    gap: 0.5rem; /* 👈 Added spacing between Technical & Professional Skills */
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 100%; /* 👈 Full width container */
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #EF0C0C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #EF0C0C;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* Accurate % animations — 👇 values updated */
+
+.skills .skill .javascript{
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .htmlcss{
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .photoshop{
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .wordpress{
+    animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.skills .skill .drupal{
+    animation: 2s drupal forwards;
+}
+@keyframes drupal {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .comunicacion{
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .creatividad{
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skills .skill .dedicacion{
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .proyect{
+    animation: 2s proyect forwards;
+}
+@keyframes proyect {
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
