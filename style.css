@@ -208,8 +208,7 @@ html{
     width: 100%;
 }
 
-
-/* SECCION S K I L L S */
+/* SECTION: S K I L L S */
 .skills {
     background-color: #252A2E;
     color: #fff;
@@ -252,43 +251,49 @@ html{
     margin-bottom: 10px;
 }
 
+/* ✅ Progress Bar Track */
 .skills .skill .barra-skill {
-    height: 8px;
+    height: 10px;
     width: 100%;
     background-color: #131517;
     position: relative;
-    margin-bottom: 30px;
-    border-radius: 5px;
+    margin-bottom: 40px;
+    border-radius: 50px;
     overflow: hidden;
 }
 
+/* ✅ Red Fill Bar */
 .skills .skill .progreso {
     background-color: #EF0C0C;
     position: absolute;
     top: 0;
     left: 0;
-    height: 8px;
-    border-radius: 5px;
+    height: 10px;
+    border-radius: 50px;
 }
 
+/* ✅ Tracker Circle With Visible % */
 .skills .skill .barra-skill span {
     position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #000; /* ✅ black instead of red/white */
+    top: 50%;
+    transform: translate(50%, -50%);
+    height: 36px;
+    width: 36px;
+    background-color: #000;
     border-radius: 50%;
-    line-height: 40px;
     text-align: center;
-    top: -17px;
-    right: 0;
-    transform: translateX(50%);
+    line-height: 36px;
     font-size: 14px;
+    font-weight: bold;
     color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-    font-weight: 600;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
-/* ✅ Skill Animations - Technical */
+/* ✅ ANIMATIONS */
+
+/* Example - CEH */
 .skills .skill .ceh {
     width: 0%;
     animation: ceh 2s forwards;
@@ -297,7 +302,11 @@ html{
     0% { width: 0%; }
     100% { width: 75%; }
 }
+.skills .skill .ceh + span {
+    left: 75%;
+}
 
+/* Web Pen Testing */
 .skills .skill .webpentest {
     width: 0%;
     animation: webpentest 2s forwards;
@@ -306,7 +315,11 @@ html{
     0% { width: 0%; }
     100% { width: 80%; }
 }
+.skills .skill .webpentest + span {
+    left: 80%;
+}
 
+/* Bug Bounty */
 .skills .skill .bugbounty {
     width: 0%;
     animation: bugbounty 2s forwards;
@@ -315,7 +328,11 @@ html{
     0% { width: 0%; }
     100% { width: 85%; }
 }
+.skills .skill .bugbounty + span {
+    left: 85%;
+}
 
+/* Full Stack */
 .skills .skill .fullstack {
     width: 0%;
     animation: fullstack 2s forwards;
@@ -324,7 +341,11 @@ html{
     0% { width: 0%; }
     100% { width: 92%; }
 }
+.skills .skill .fullstack + span {
+    left: 92%;
+}
 
+/* WordPress */
 .skills .skill .wordpress {
     width: 0%;
     animation: wordpress 2s forwards;
@@ -333,7 +354,11 @@ html{
     0% { width: 0%; }
     100% { width: 95%; }
 }
+.skills .skill .wordpress + span {
+    left: 95%;
+}
 
+/* Video Editing */
 .skills .skill .videoedit {
     width: 0%;
     animation: videoedit 2s forwards;
@@ -342,7 +367,11 @@ html{
     0% { width: 0%; }
     100% { width: 90%; }
 }
+.skills .skill .videoedit + span {
+    left: 90%;
+}
 
+/* Graphic Design */
 .skills .skill .design {
     width: 0%;
     animation: design 2s forwards;
@@ -351,8 +380,11 @@ html{
     0% { width: 0%; }
     100% { width: 98%; }
 }
+.skills .skill .design + span {
+    left: 98%;
+}
 
-/* ✅ Skill Animations - Professional */
+/* Communication */
 .skills .skill .communication {
     width: 0%;
     animation: communication 2s forwards;
@@ -361,7 +393,11 @@ html{
     0% { width: 0%; }
     100% { width: 80%; }
 }
+.skills .skill .communication + span {
+    left: 80%;
+}
 
+/* Teamwork */
 .skills .skill .teamwork {
     width: 0%;
     animation: teamwork 2s forwards;
@@ -370,7 +406,11 @@ html{
     0% { width: 0%; }
     100% { width: 70%; }
 }
+.skills .skill .teamwork + span {
+    left: 70%;
+}
 
+/* Creativity */
 .skills .skill .creativity {
     width: 0%;
     animation: creativity 2s forwards;
@@ -379,7 +419,11 @@ html{
     0% { width: 0%; }
     100% { width: 99%; }
 }
+.skills .skill .creativity + span {
+    left: 99%;
+}
 
+/* Dedication */
 .skills .skill .dedication {
     width: 0%;
     animation: dedication 2s forwards;
@@ -388,7 +432,11 @@ html{
     0% { width: 0%; }
     100% { width: 65%; }
 }
+.skills .skill .dedication + span {
+    left: 65%;
+}
 
+/* Project Management */
 .skills .skill .project {
     width: 0%;
     animation: project 2s forwards;
@@ -397,8 +445,9 @@ html{
     0% { width: 0%; }
     100% { width: 94%; }
 }
-
-
+.skills .skill .project + span {
+    left: 94%;
+}
 
 /* SECCION CURRICULUM */
 .curriculum{
